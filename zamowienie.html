@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Składanie zamówienia</title>
+<meta name="description" content="Najlepsze telefony i oryginalne akcesoria w jednym miejscu, w konkurencyjnych cenach.Sprawdź i przekonaj się sam!">
+<meta name="keywords" content="telefony, smartfony, akcesoria, niskie ceny, oryginalne, konkurencyjne ceny">
+
+<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="img/bluestore.png" width="200px"></a>
+            </div>
+            <nav>
+            <ul id ="MenuItems">
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="telefony.html">Telefony</a></li>
+                <li><a href="akcesoria.html">Akcesoria</a></li>
+                <li><a href="konto.html">Konto</a></li>
+            </ul>
+            </nav>
+            <a href="koszyk.html"><img src="img/koszyk.png" width="30px" height="30px"></a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+    </div>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Dane</th>
+                <th>Sposób dostawy</th>
+                <th>Sposób płatności</th>
+            </tr>
+            <tr>
+            <td>
+            <label for="fname"><i class="fa fa-user"></i>Imię i nazwisko</label><br>
+            <input type="text" id="dane" name="firstname"><br>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label><br>
+            <input type="text" id="dane" name="email"><br>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Adres</label><br>
+            <input type="text" id="dane" name="address"><br>
+            <label for="city"><i class="fa fa-institution"></i>Miasto</label><br>
+            <input type="text" id="dane" name="city">
+
+                  <td>
+                   Paczkomat 9.99zł<input type="radio" name="dane" value="wartosc">
+                      <td>
+                       Za pobraniem<input type="radio" name="dane2" value="wartosc">
+                    </td>
+                </td>
+            </td>
+                <tr>
+                    <td>
+                        <label for="zip"><i class="fa fa-institution"></i>Kod pocztowy</label><br>
+                         <input type="text" id="dane" name="zip"><br>
+                         <label for="number"><i class="fa fa-institution"></i>Numer telefonu</label><br>
+                         <input type="text" id="dane" name="phone"><br>
+                       
+                        <td>
+                        Odbiór osobisty 0,00zł  <input type="radio" name="dane" value="wartosc" >
+                        <td>
+                        Szybki przelew <input type="radio" name="dane2" value="wartosc" >
+                    </td>
+                    </td> 
+                </td>
+                </tr>
+                    <td>
+                        
+                     
+                  </td> 
+                </td>
+                
+            </tr>
+
+            
+                    <tr>
+                        <td>
+                        <td><td>  </td></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <td><td>Do zapłaty: 4 300,99 zł + dostawa</td></td>
+                        </td>
+                    </tr>
+                    
+               
+            </div>
+                <tr>
+                    <td>
+                        <a href="" class="btn">Przejdź dalej</a>
+                    </td>
+                </tr>
+            </tr>
+            
+        </table>
+
+        
+        
+    </div>
+    
+</div>
+
+
+
+<!------------- stopka---------->
+
+<div class="footer">
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id tellus in magna condimentum malesuada ac vel metus. Aliquam fringilla massa nulla. Ut vitae blandit elit, vitae aliquam nulla. Vivamus vitae urna viverra, dapibus purus et, pellentesque augue. In consectetur a turpis consequat dignissim. Ut lacinia vehicula accumsan. In in ornare tellus. Vestibulum ultricies massa at erat dignissim, feugiat vestibulum lorem gravida. Vivamus accumsan eu massa quis pretium. Aenean vestibulum condimentum lectus at scelerisque. Vestibulum porttitor ligula sit amet sagittis consequat. Aenean et nisi turpis. Sed sed maximus ligula.</p>
+        </div>
+    </div>
+
+
+<!-------------- js dla zwijania menu------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+   
+
+
+</body>
+</html>
